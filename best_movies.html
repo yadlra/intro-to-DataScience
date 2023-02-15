@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+<style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.0.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.0.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="3294af43-7b35-4826-a13b-dc5b1c0c0a7c" data-root-id="p1521" style="display: contents;"></div>
+  
+    <script type="application/json" id="p1693">
+      {"901f6a36-fa38-46ff-b198-ecd11246288b":{"version":"3.0.3","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Column","id":"p1521","attributes":{"children":[{"type":"object","name":"Select","id":"p1519","attributes":{"title":"Genre:","options":["All","Action","Biography","Comedy","Drama","Thriller"],"value":"All"}},{"type":"object","name":"Select","id":"p1520","attributes":{"title":"Country:","options":["All","Australia","South Korea","USA"],"value":"All"}},{"type":"object","name":"Figure","id":"p1466","attributes":{"x_range":{"type":"object","name":"DataRange1d","id":"p1468"},"y_range":{"type":"object","name":"DataRange1d","id":"p1467"},"x_scale":{"type":"object","name":"LinearScale","id":"p1480"},"y_scale":{"type":"object","name":"LinearScale","id":"p1482"},"title":{"type":"object","name":"Title","id":"p1469","attributes":{"text":"Best Movies in the Last 10 Years"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1514","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1463","attributes":{"selected":{"type":"object","name":"Selection","id":"p1464","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1465"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAA=="},"shape":[10],"dtype":"int32","order":"little"}],["Movie",{"type":"ndarray","array":["Inception","The Social Network","The Dark Knight","Avengers: Endgame","La La Land","Parasite","The Grand Budapest Hotel","Moonlight","Black Panther","Mad Max: Fury Road"],"shape":[10],"dtype":"object","order":"little"}],["Year",{"type":"ndarray","array":{"type":"bytes","data":"2gcAANoHAADYBwAA4wcAAOAHAADjBwAA3gcAAOAHAADiBwAA3wcAAA=="},"shape":[10],"dtype":"int32","order":"little"}],["Rating",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZIUDNzMzMzMweQAAAAAAAACJAzczMzMzMIEAAAAAAAAAgQDMzMzMzMyFAMzMzMzMzIECamZmZmZkdQDMzMzMzMx1AMzMzMzMzIEA="},"shape":[10],"dtype":"float64","order":"little"}],["Genre",{"type":"ndarray","array":["Action","Biography","Action","Action","Comedy","Thriller","Comedy","Drama","Action","Action"],"shape":[10],"dtype":"object","order":"little"}],["Country",{"type":"ndarray","array":["USA","USA","USA","USA","USA","South Korea","USA","USA","USA","Australia"],"shape":[10],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1515","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1516"}}},"glyph":{"type":"object","name":"Circle","id":"p1510","attributes":{"x":{"type":"field","field":"Year"},"y":{"type":"field","field":"Rating"},"size":{"type":"value","value":10},"line_color":{"type":"value","value":"blue"},"fill_color":{"type":"value","value":"blue"},"hatch_color":{"type":"value","value":"blue"}}},"selection_glyph":{"type":"object","name":"Circle","id":"p1512","attributes":{"x":{"type":"field","field":"Year"},"y":{"type":"field","field":"Rating"},"size":{"type":"value","value":10},"line_color":{"type":"value","value":"red"},"fill_color":{"type":"value","value":"red"},"hatch_color":{"type":"value","value":"red"}}},"nonselection_glyph":{"type":"object","name":"Circle","id":"p1511","attributes":{"x":{"type":"field","field":"Year"},"y":{"type":"field","field":"Rating"},"size":{"type":"value","value":10},"line_color":{"type":"value","value":"blue"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"blue"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"blue"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Circle","id":"p1513","attributes":{"x":{"type":"field","field":"Year"},"y":{"type":"field","field":"Rating"},"size":{"type":"value","value":10},"line_color":{"type":"value","value":"blue"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"blue"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"blue"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1473","attributes":{"tools":[{"type":"object","name":"BoxSelectTool","id":"p1498","attributes":{"renderers":"auto","overlay":{"type":"object","name":"BoxAnnotation","id":"p1499","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"LassoSelectTool","id":"p1500","attributes":{"renderers":"auto","overlay":{"type":"object","name":"PolyAnnotation","id":"p1501","attributes":{"syncable":false,"level":"overlay","visible":false,"xs":[],"xs_units":"canvas","ys":[],"ys_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"HoverTool","id":"p1517","attributes":{"renderers":"auto","tooltips":[["Movie","@Movie"],["Genre","@Genre"],["Country","@Country"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1491","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1492","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1494"},"axis_label":"Rating","major_label_policy":{"type":"object","name":"AllLabels","id":"p1493"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p1484","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1485","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1487"},"axis_label":"Year","major_label_policy":{"type":"object","name":"AllLabels","id":"p1486"}}}],"center":[{"type":"object","name":"Grid","id":"p1490","attributes":{"axis":{"id":"p1484"}}},{"type":"object","name":"Grid","id":"p1497","attributes":{"dimension":1,"axis":{"id":"p1491"}}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p1693').textContent;
+              const render_items = [{"docid":"901f6a36-fa38-46ff-b198-ecd11246288b","roots":{"p1521":"3294af43-7b35-4826-a13b-dc5b1c0c0a7c"},"root_ids":["p1521"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
